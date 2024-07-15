@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <style>
+        table {
+            box-shadow: rgba(166, 166, 166, 0.48) 6px 2px 16px 0px, rgba(201, 201, 201, 0.8) -6px -2px 16px 0px;
+        }
+        table tr:hover td {
+            background-color: rgb(196, 196, 196);
+        }
+        table  thead th {
+            background-color: #000000;
+            color:#dddddd
+        }
+        table tbody th:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+        table{
+            border:solid 1px black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            width: 100%;
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            width: 200px;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            height: calc(200vh - 120px); 
+            width: 120px;
+            background-color: #dddddd;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            top: 0px; 
+            text-align: start;
+        }
+        .sidebar img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #000000;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #f4f4f4;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .footer {
+            width: 100%;
+            background-color: #dddddd;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+        .highlight {
+           color: red;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://images.vexels.com/content/234447/preview/analog-clock-alarm-stroke-3b61aa.png" alt="Imagem da Clínica" style="width:4%;">
+
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+
+             <img src="https://ead.santacasacuritiba.com.br/pluginfile.php/1/theme_santacasa/customlogotopbar/1707925459/82e87f75-cdcc-441a-ad80-405bec8324a3.png" alt="Logo" style="width:100%;">
+            <nav>
+                <a href="Pagina Principal.html">Pagina Principal</a>
+                <a href="Sobre.html">Sobre nós</a>
+                <a href="Horarios.html">Horarios de Atendimento</a>
+                <a href="Contato.html">Contato</a>
+            </nav>
+            
+        </div>
+        <div class="content">
+            <header>
+                <h1>Horários de Atendimento</h1>
+            </header>
+            
+            <section id="content">
+                <h2>Serviços Oferecidos</h2>
+                <p>Aqui na nossa clínica oferecemos uma variedade de serviços médicos especializados para atender às necessidades da comunidade.</p>
+                
+                <h2>Tabela de Preços</h2>
+                <table summary="Tabela de horarios e valores dos serviços"  width="550">
+                    <thead>
+                        <tr>
+                            <th title="Serviços">Serviços</th>
+                            <th title="Segunda-Sexta">Segunda-Sexta</th>
+                            <th title="Valores">Valores</th>
+                            <th title="Sabado-Domingo">Sabado-Domingo</th>
+                            <th title="Valores">Valores</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                    <tr>
+                        <td>Clínica Geral</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 80,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 90,00</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 70,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <tr>
+                        <td>Psiquiatria</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 65,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 75,00</td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 75,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 85,00</td>
+                    </tr>
+                    <tr>
+                        <td>Dermatologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 75,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 85,00</td>
+                    </tr>
+                    <tr>
+                        <td>Endecrinologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 80,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 90,00</td>
+                    </tr>
+                    <tr>
+                        <td>Neurologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 100,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 110,00</td>
+                    </tr>
+                    <tr>
+                        <td>Ginicologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 70,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 80,00</td>
+                    </tr>   
+                    <tr>
+                        <td>Radiologia</td>
+                        <td>08h - 19h</td>
+                        <td>R$ 80,00</td>
+                        <td>08h - 15h</td>
+                        <td>R$ 90,00</td>
+                    </tr>
+                   </tbody>
+                    
+                </table>
+            </section>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>Telefone:  (41) 3320-3500 | Endereço: Praça Rui Barbosa, 694 - Centro, Curitiba - PR, 80010-030</p>
+    </div>
+</body>
+</html>
