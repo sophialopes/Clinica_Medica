@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            width: 100%;
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .header img {
+            width: 200px;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            height: calc(200vh - 120px); 
+            width: 120px;
+            background-color: #dddddd;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            top: 0px; 
+            text-align: start;
+        }
+        .sidebar img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #000000;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #f4f4f4;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .footer {
+            width: 100%;
+            background-color: #dddddd;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+        .highlight {
+           color: #ff0000;
+        }
+        .row {
+            margin:5px
+        }
+     label {
+        width:100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://prints.ultracoloringpages.com/cb0fb9706b6c168bb09f50f9a3833a0c.png" alt="Imagem da Clínica" style="width:4%;">
+
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <img src="https://ead.santacasacuritiba.com.br/pluginfile.php/1/theme_santacasa/customlogotopbar/1707925459/82e87f75-cdcc-441a-ad80-405bec8324a3.png" alt="Logo" style="width:100%;">
+            <nav>
+                <a href="Pagina Principal.html">Pagina Principal</a>
+                <a href="Sobre.html">Sobre nós</a>
+                <a href="Horarios.html">Horarios de Atendimento</a>
+                <a href="Contato.html">Contato</a>
+            </nav>
+        </div>
+        <div class="content">
+
+            <h1> Informações de Contato</h1>
+            <p>Além da Central que funciona no endereço: <b><span class="highlight">Praça Rui Barbosa, 694 - Centro, Curitiba - PR, 80010-030</span></b>, os servidores que precisarem agendar consultas de especialidades médicas poderão telefonar para o número <b><span class="highlight">4007-2323</span></b>. Outra modalidade de agendamento é por meio do aplicativo WhatsApp: basta enviar uma mensagem para o número <b><span class="highlight">99248-5633</span></b> e agendar a consulta.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14412.169858843372!2d-49.2727911!3d-25.4368438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46df5ad031b%3A0x1648f3f2190db61a!2sSanta%20Casa%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1720741483786!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Formulario de cadatro</h2>
+    
+            <form>
+                <legend>Formulario</legend>
+                
+                <div class="row">
+                <label>Nome:</label><input type="text"/>
+                <label>Telefone:</label><input type="text"/>
+            </div>
+            <div class="row">
+                <label>Endereço:</label><input type="text"/>
+                <label>E-mail:</label><input type="email"/>
+            </div>
+          <div class="row">
+                <label>Assunto:</label><input type="text"/>
+                <label>Mensagem:</label>
+                <textarea name="menssage"></textarea>
+            </div>
+            <div class="row">
+                <button type="reset">
+                    Limpar
+                </button>
+                <button type="submit">
+                    Enviar Informações
+                </button>
+            </div>
+           
+        </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Telefone:  (41) 3320-3500 | Endereço: Praça Rui Barbosa, 694 - Centro, Curitiba - PR, 80010-030</p>
+    </div>
+</body>
+</html>
